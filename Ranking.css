@@ -1,0 +1,104 @@
+.leaderboard-section {
+  background: linear-gradient(to bottom, #003300, #001a00);
+  padding: 2rem 1rem;
+  border-radius: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  color: #fff;
+  font-family: 'Mukta Mahee', sans-serif;
+}
+
+.top3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user.first {
+  transform: translateY(-20px);
+}
+
+.user img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #00ff88;
+  object-fit: cover;
+}
+
+.user.first img {
+  width: 100px;
+  height: 100px;
+  border-width: 4px;
+}
+
+.crown {
+  width: 24px;
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.username {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #00ff88;
+}
+
+.score {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #80ffcc;
+}
+
+.ranking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.ranking-list li {
+  display: flex;
+  align-items: center;
+  background: #004d33;
+  border-radius: 30px;
+  padding: 0.6rem 1rem;
+}
+
+.ranking-list .rank {
+  width: 24px;
+  text-align: center;
+  font-weight: bold;
+  color: #00ff88;
+}
+
+.ranking-list img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 0.75rem;
+}
+
+.ranking-list .username {
+  flex: 1;
+  font-size: 0.9rem;
+  color: #ccffdd;
+}
+
+.ranking-list .score {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #80ffcc;
+}
+

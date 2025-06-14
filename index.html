@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecopoints</title>
+      <link rel="stylesheet" href="estilo.css" />
+     <link rel="icon" type="image/png" href="img/Eco.png">
+          <link rel="apple-touch-icon" href="img/Eco.png">
+            <link rel="shortcut icon" href="img/Eco.png">
+
+</head>
+<body>
+    
+<header id="header">
+  <nav class="navbar container">
+
+    <a href="#home"class="logo">EcoPoints</a>
+
+    <button class="nav-toggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+
+   <ul class="nav-links">
+  <li><a href="#home">Início</a></li>
+  <li><a href="#sobre">Sobre</a></li>
+  <li><a href="#servicos">Serviços</a></li>
+  <li><a href="login.html">Login</a></li>
+  <li><a href="#Ranking">Ranking</a></li>
+  <li><a href="registrarpontos.html">Registrar Pontos</a></li> <!-- Esse é o novo botão -->
+  <li><a href="fale_conosco.html">Fale Conosco</a></li>
+</ul>
+
+
+  </nav>
+</header>
+
+
+  <section id="home" class="hero">
+  <div class="container">
+    <h1>Transforme seu impacto</h1>
+    <p>Junte-se a nós e recicle por um mundo melhor</p>
+    <a href="#servicos" class="btn">Reciclar</a>
+  </div>
+</section>
+
+
+<section id="sobre" class="section sobre">
+  <div class="container">
+    <div class="sobre-content">
+      <div class="imagem-aplicacao">
+        <img src="img/aplicacao.png" alt="Aplicação EcoPoints" class="img-aplicacao">
+      </div>
+      <div class="imagem-sobrenos">
+        <img src="img/sobrenos.png" alt="Sobre Nós" class="img-sobrenos">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section id="servicos" class="section servicos">
+  <div class="container">
+    <h2>Locais com Coleta Ativa</h2>
+    <p>Mapa interativo com status e animação dos pontos de coleta</p>
+
+    <div id="map" style="height: 500px; border-radius: 12px;"></div>
+  </div>
+</section>
+
+  <section id="Utilidade" class="section">
+    <div class="container">
+      <h2>Nosso Objetivo</h2>
+      <div class="cards">
+        <div class="card"><h3>Ramo Educacional </h3><p>1000 Alunos Cadastrados</p></div>
+        <div class="card"><h3>Ramo Fitness </h3><p>500 Academias </p></div>
+        <div class="card"><h3>Ramo Empresarial</h3><p>150 empresas </p></div>
+      </div>
+    </div>
+
+  </section>
+
+          <!-- Bolinhas -->
+
+ <section id="Ranking" class="section Ranking">
+  <div class="ranking-box">
+    <div class="podium top3">
+
+      <!-- Segundo lugar -->
+      <div class="user second" data-aos="flip-right">
+        <span class="position">2</span>
+        <img src="assets/Unicamp.png" alt="2º lugar" /> teste texto user 
+        <p data-name-podium>teste</p> 
+        <span data-revenue-podium class="revenue">-</span> 
+      </div>
+
+      <!-- Primeiro lugar -->
+      <div class="user first">
+        <span class="position">1</span>
+        <img class="crown" src="assets/crown.svg" alt="coroa" />
+        <img src="assets/FATEC.png" alt="1º lugar" /> teste texto user 
+        <p data-name-podium>teste</p>
+        <span data-revenue-podium class="revenue">teste numero</span>
+      </div>
+
+      <!-- Terceiro lugar -->
+      <div class="user third" data-aos="flip-right">
+        <span class="position">3</span>
+        <img src="assets/usp.png" alt="3º lugar" /> teste texto user 
+        <p data-name-podium>-</p>
+        <span data-revenue-podium class="revenue">-</span>
+      </div>
+    </div>
+
+    <!-- Parte em pé -->
+<div class="ranking-list">
+  <span>O ranking é atualizado a cada 24 Horas.</span>
+
+  <!-- A lista será preenchida via JavaScript -->
+  <ul data-aos="fade-right">
+    <!-- JavaScript insere os <li> dinamicamente aqui -->
+  </ul>
+</div>
+
+</section>
+
+
+  <section id="contato" class="section">
+    <div class="container">
+      <h2>Contato</h2>
+      <form>
+        <input type="text" placeholder="Nome" required />
+        <input type="email" placeholder="E-mail" required />
+        <textarea placeholder="Mensagem" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; © 2025 <Copyright:EcoPoints class="com br"></Copyright:EcoPoints></p>
+    </div>
+  </footer>
+
+<!-- API Google Maps com callback -->
+<script 
+async 
+defer
+ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcYScFk1KgUvzZoJpj3ne11Euc8iCrYB0&callback=initMap">
+</script>
+
+<!-- SEU ARQUIVO SCRIPT.JS -->
+  <script src="JS/script.js"></script>
+
+
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // tempo da animação
+    once: true      // anima uma vez só
+  });
+</script>
+
+</body>
+</html>
